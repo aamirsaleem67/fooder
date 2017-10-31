@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var appRoutes = require('./routes/app');
 var userRoutes = require('./routes/user');
 var locationRoutes = require('./routes/restaurant');
-
+var reviewRoutes = require('./routes/reviews')
 var app = express();
 mongoose.connect('localhost:27017/fooder-land');
 
@@ -34,6 +34,7 @@ app.use(function (req, res, next) {
 
 app.use('/user', userRoutes);
 app.use('/location', locationRoutes);
+app.review('/review', reviewRoutes);
 app.use('/', appRoutes);
 
 // catch 404 and forward to error handler
