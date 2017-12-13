@@ -34,7 +34,7 @@ app.use(function (req, res, next) {
 
 app.use('/user', userRoutes);
 app.use('/location', locationRoutes);
-app.review('/review', reviewRoutes);
+app.use('/review', reviewRoutes);
 app.use('/', appRoutes);
 
 // catch 404 and forward to error handler

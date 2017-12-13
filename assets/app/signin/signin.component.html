@@ -1,21 +1,5 @@
-<div class="col-md-8 col-md-offset-2">
+<!-- <div class="col-md-8 col-md-offset-2">
     <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-        <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input
-                    type="text"
-                    id="firstName"
-                    class="form-control"
-                    formControlName="firstName">
-        </div>
-        <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input
-                    type="text"
-                    id="lastName"
-                    class="form-control"
-                    formControlName="lastName">
-        </div>
         <div class="form-group">
             <label for="email">Mail</label>
             <input
@@ -37,4 +21,15 @@
                 type="submit"
                 [disabled]="!myForm.valid">Submit</button>
     </form>
+</div> -->
+
+<div class="tile">
+    <div class="myimage">
+       <img class="img-responsive" src="https://images.deliveryhero.io/image/foodpanda/pk/s1sy-listing.jpg?width=400&height=208">
+    </div>
+    <div class="rating-name" style="display:flex">
+       <h1>Darbar</h1>
+       <star-rating-comp [starType]="'svg'" [rating]="2.63"></star-rating-comp>
+       
+    </div>
 </div>
